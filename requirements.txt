@@ -1,0 +1,14 @@
+antlr4-python3-runtime==4.11
+blinker
+click
+Flask
+gmpy2
+itsdangerous
+Jinja2
+MarkupSafe
+mpmath
+setuptools==75.8.0
+sympy
+waitress
+Werkzeug
+wheel==0.45.1

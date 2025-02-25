@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: flask-app
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"  # 必要に応じてポートを調整
