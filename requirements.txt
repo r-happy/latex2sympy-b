@@ -1,13 +1,15 @@
 antlr4-python3-runtime==4.11
-blinker
+blinker 
 click
 Flask
+Flask-Cors
 gmpy2
 itsdangerous
 Jinja2
 MarkupSafe
 mpmath
 setuptools==75.8.0
+six
 sympy
 waitress
 Werkzeug

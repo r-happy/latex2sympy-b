@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify
 import sympy as sp
 from sympy.parsing.latex import parse_latex
 from waitress import serve
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/parser", methods=["POST"])
 def parser():
@@ -27,4 +29,5 @@ def parser():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == "__main__":
+    # app.run(debug=True)
     serve(app, host="0.0.0.0", port=5000) 
