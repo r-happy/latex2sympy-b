@@ -5,7 +5,7 @@ from waitress import serve
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins=["https://latex2sympy.rhappy.dev"])
+CORS(app, supports_credentials=True)
 
 @app.route("/parser", methods=["POST"])
 def parser():
