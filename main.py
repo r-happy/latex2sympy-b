@@ -22,7 +22,7 @@ def parser():
 
         response_data = {
             "formula": str(expr),
-            "result": str(simplified_result)
+            "result":  sp.latex(simplified_result)
         }
         return jsonify(response_data)
     except Exception as e:
